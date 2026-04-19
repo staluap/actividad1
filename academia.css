@@ -1,0 +1,180 @@
+/* ACTIVIDAD NF3
+Desarrollo Web en Entorno Cliente - iFP 2025/2026
+Paula Serrano Torrecillas */
+
+/* GENERAL */
+
+body {
+  background-color:white;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+  background-color: white;
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0 1px 8px black;
+  text-align: center;
+}
+.logo {
+  width: 150px;
+  height: auto;
+  padding: 10px;
+}
+footer {
+  background-color: black;
+  color: white;
+  height: fit-content;
+  width: 100%;
+  padding: 30px;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0 1px 8px black;
+  bottom: 0%;
+  font-size: 12px;
+  display: flex;
+}
+.ifp{
+  width: 120px;
+  right: 100px;
+  position: absolute;
+}
+main {
+  padding-top: 160px;
+  text-align: center;
+  padding-bottom: 160px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* FORMULARIO */
+.form-container {
+    margin: 0px;
+    padding: 0px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form {
+  height: fit-content;
+  width: 400px;
+  display:flex;
+  gap: 40px;
+  flex-direction: column;
+  margin: 20px;
+  background-color: rgb(189, 189, 189);
+  padding: 30px;
+  border-radius: 15px;
+}
+label {
+  color: black(216, 120, 11);
+  font-size: 12pt;
+  font-weight: bold;
+}
+.lineform {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content:space-between;
+}
+.hueco{
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: white;
+}
+.bt-form{
+  align-self: flex-end;
+  background-color: black;
+  color: white;
+  border-radius:10px;
+  border-width: 0;
+  border-style: solid;
+  border-width: 1px;
+  width: 80px;
+  height: 40px;
+}
+.bt-form:hover, button:hover {
+  background-color: rgb(109, 186, 206);
+  cursor: pointer;
+}
+
+.bt-form:active, button:active {
+  background-color: white;
+  color: black;
+}
+
+.msn {
+  font-size: 12pt;
+  padding: 0px;
+  margin: 0px;
+  color: rgb(216, 57, 57); /* éxito rgb(15 170 1); */
+  font-weight: bold;
+  display:none;
+}
+
+/* LISTA */
+.list-container {
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .botonera{} */
+
+button {
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 170px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.contador {
+    color: rgb(37, 167, 199);
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+    font-size: 14pt;
+}
+
+.listado {
+  height: fit-content;
+  width: fit-content;
+  min-width: 20%;
+  align-self:center;
+  text-align: left;
+  background-color: rgb(125, 192, 209);
+  padding: 30px 80px 30px 80px;
+  border-radius: 15px;
+}
+
+.eliminarItem {
+  width: fit-content;
+  height: fit-content;
+  padding: 2px 6px;
+  margin: 0px 10px;
+  font-size: 16pt;
+}
+
+.item {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}

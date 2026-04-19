@@ -1,0 +1,64 @@
+<!-- ACTIVIDAD NF3 -->
+<!-- Desarrollo Web en Entorno Cliente - iFP 2025/2026 -->
+<!-- Paula Serrano Torrecillas -->
+
+<!-- Creamos la estructura HTML-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia</title>
+    <link rel="stylesheet" href="academia.css">
+    <!-- ICONOS: Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    <!-- Cabecera que identifique que es una página de academia (logo de google)-->
+    <header>
+        <img src="imagen/logo.png" alt="Academia" class="logo" />
+    </header>
+    <main>
+    <!-- FORMULARIO-->
+    <div class="form-container">
+    <form id="formulario">
+        <div class="lineform">
+            <label for="code">Código</label>
+            <input type="text" id="code" name="code" class="hueco" placeholder="ej: PGW526/25" maxlength="9">
+        </div>
+        <div class="lineform">
+            <label for="curso">Nombre del curso</label>
+            <input type="text" id="curso" name="curso" class="hueco" placeholder="ej: Programación web" maxlength="100">
+        </div>
+        <p id="formMSN" class="msn">Mensaje error/éxito</p>
+        <input type="submit" value="Enviar" class="bt-form" id="btForm">
+    </form>
+    </div>
+    <!-- ZONA LISTADOS CURSOS-->
+    <div class="list-container">
+        <h1>Listado de cursos</h1>
+        <div class="botonera">
+            <button id="list">Listar todos los cursos</button>
+            <button id="remove">Quitar todos los cursos</button>
+            <button id="add">Añadir curso con código</button>
+        </div>
+        <div class="contador">
+            <p id="contador">X cursos mostrados de X cursos en total </p>
+        </div>
+        <div class="listado" id="listado">
+        </div>
+    </div>
+    </main>
+    <!-- Footer que indica los datos básicos de la actividad y el logo del centro-->
+    <footer>
+        <p>ACTIVIDAD NF3 - DESARROLLO WEB EN ENTORNO CLIENTE
+        <br>Paula Serrano / 2025-2026</p>
+        <img src="imagen/ifp.png" class="ifp">
+    </footer>
+    <!-- Cargamos todos los archivos de javaScript-->
+    <script src="modelo.js"></script>
+    <script src="vista.js"></script>
+    <!-- El controlador maneja elementos de vista y modelo así que debe cargar después de estos o podría dar errores-->
+    <script src="controlador.js"></script>
+</body>
+</html>
